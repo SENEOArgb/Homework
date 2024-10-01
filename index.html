@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
     <style>
-        div{
+        .cl1{
             align-items: center;
             margin-top: 10%;
             margin-left: 40%;
@@ -19,10 +19,39 @@
             width: auto;
             overflow-y: hidden ;
         }
+        .social {
+            margin-top: 20px;
+        }
+        .social-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .vk-button {
+            background-color: #4a76a8;
+        }
+        .telegram-button {
+            background-color: #0088cc;
+        }
+        .form{
+            margin-top: 20px;
+            background-color: beige;
+            width: 21%;
+            border-radius: 10%;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+        }
     </style>
 </head>
 <body>
-  <div>
+  <div class="cl1">
   <h1>Обо мне:</h1>
       <p>ФИО: Аверкин Сергей Максимович</p>
       <p>Номер телефона: 79101829243</p>
@@ -34,5 +63,11 @@
       <p>Характер: спокойный, упорный, целеустремленный, общительный.</p>
       <p>GitHub: <a href="https://github.com/SENEOArgb">https://github.com/SENEOArgb</a></p>
       <button style="background-color: blanchedalmond;">Подписаться на новости</button>
+      <div class="form">
+       <div class="social">
+         <button class="social-button vk-button">VK</button>
+         <button class="social-button telegram-button">Telegram</button>
+       </div>
+      </div>
   </div>
 </body>
